@@ -7,30 +7,53 @@ html {
 
 body {
 	font-size: 1.6em;
-	background: #000;
+	background: #decade;
 	color:#deface;
 	line-height: 133%;
+	-webkit-transition: all .7s ease-in-out;
+
 }
-.colors{
+.colors a{
+	text-decoration: none;
+}
+.colors a:hover{
+	text-decoration: none;
+	background: #000;
+}
+.color{
 	padding:1.5em, 3em,1.5em,3em;
+
+	-webkit-transition: font-size 0.5s ease-out;
+	-webkit-transition: background .7s linear;
+
 }
+.color:hover{
+	font-size: 30px;
+	text-decoration: none;
+}
+
 
 .one{
 	color:#deface;
 	padding:1.5em, 3em,1.5em,3em;
+	
 }
+
 .two{
 	color: #accede;
 	padding:1.5em, 3em,1.5em,3em;
 }
+
 .three{
 	color: #beaded;
 	padding:1.5em, 3em,1.5em,3em;
 }
+
 .four{
 	color: #decade;
 	padding:1.5em, 3em,1.5em,3em;
 }
+
 .wrapper {
 	margin: 1rem auto 2rem auto;
 	width: 300px;
@@ -69,13 +92,18 @@ body {
 	background: #d1d1d1;
 	overflow:hidden;
 	-webkit-transition: all 0.3s ease;
+
 }
 
 .image {
 	max-width: 100%;
-	border: 1px solid #000;
+	border-width: 0px;
+	border-collapse: #000;
 	margin-bottom: 10px;
+	
+
 }
+
 
 .group:after {
 	content: "";
@@ -84,13 +112,19 @@ body {
 }
 
 @media only screen and (min-width: 480px) {
+	body{
+		background: #deface;
+		color:#accede;
+	}
 	.wrapper { width: 460px; }
 
 	.articles {
 		float: left;
 		width: 220px;
 	}
-
+.gallery:hover {
+	border: 0 solid #ccc;
+}
 	.gallery {
 		float: right;
 		margin: 2rem 0 2rem 20px;
@@ -99,6 +133,10 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+	body{
+		background: #accede;
+		color:#beaded;
+	}
 	.wrapper { width: 748px; }
 
 	.articles {
@@ -116,6 +154,15 @@ body {
 }
 
 @media only screen and (min-width: 1024px) {
+	body{
+		background: #beaded;
+		color:#deface;
+	}
+
+	hr{
+		background-color: #deface;
+
+	}
 	.wrapper { width: 1004px; }
 
 	.articles {
